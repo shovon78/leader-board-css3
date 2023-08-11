@@ -111,3 +111,40 @@ hr{
 .course-title{
     width: 200px;
 }
+
+/* -------------------
+reponsive styles
+-------------------- */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .courses{
+        flex-direction: column;
+    }
+}
+
+@media only screen (min-width:689px) and (max-width:991px) {
+    .container{
+        width:100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        width: 100%;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .courses{
+        flex-direction: column;
+    }
+}
